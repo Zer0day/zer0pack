@@ -1,0 +1,86 @@
+###release notes for Zer0pack 0.7###
+
+/*\fixes since 0.7/*\
+[+] increased max. exploit size from 4kb to 1MB
+[+] increased max. exploit-version length from 20 chars to 50 chars
+[+] set limits for the <input> fields in add_exploit&add_payload
+[+] totally improved payload system
+[+] edit payload function added
+[+] edit exploit function added
+
+/*\fixes since 0.7.1/*\
+[+] ignore version option added
+[+] debug print exploit bug fixed
+[+] logout added
+
+/*\fixes since 0.7.2/*\
+[+] Google Iron detection added
+[+] write exploit to binary file added (experimental)
+[+] exploit-module download
+[+] success is noted
+[+] forcedownload only in xmodules/ dir
+
+/*\features/*\
+
+# unique system which selects dynamically the right shellcode and exploit
+# 100% non static ;)
+# integrated shellcode management system
+# exploit-module manager to create, delete and import exploit-modules
+# big database for browsers
+# OS detection / OS-version detection
+# capable for every exploit
+# including firefox-addon downloader
+# force-download for droppers
+# perfect logging system :D
+# RegEx browser-versions
+
+/*\known bugs/*\
+
+i fixed many bugs, but there are still some and i am too lazy to fix them :P
+
+[X] XSS is possible by importing a modified exploit-module
+[?] SQL commands in an exploit-module MIGHT be executed
+
+
+/*\todo/*\
+
+* static include paths
+* make it usable without mysql
+* fix bugs ;)
+* cookie steal-function
+* xss stuff :D
+* write a mysql-class to handle querys easier
+* rewrite thousand lines of ugly code :/
+* improve design =D
+* ADD 'use every exploit/random exploit'
+
+/*\system requirements/*\
+
+=> Unix based webserver
+=> Apache (tested on 2.2)
+=> PHP4 or newer (tested on PHP 5.2.6) // it may not work on PHP4
+=> Mysql (tested on 5.0.5)
+=> about 4MB free space (the country-db is huge)
+=> FTP-access
+
+/*\install/*\
+
+1.  enter the 'zer0pack' directory and open 'config.php' with a text-editor
+2.  put your mysql-password, your mysql-db, and your mysql-server (most times this is 'localhost') and the password for the acp in :)
+3. upload the whole directory to your server
+4. start the installer by opening
+http://yourserver.com/zer0pack/install.php
+with your webbrowser
+if there are any errors, the installer isnt able to connect to the mysql-server
+5. DELETE install.php
+6. done! open:
+http://yourserver.com/zer0pack/
+you will be asked for the password you have set in the 'config.php'
+7. use this direct link: http://yourserver.com/zer0pack/frame.php
+or put it as iframe on a site :D
+
+
+REPORT ANY ERRORS THAT OCCUR by writing a message to me :D
+
+License: GPLv2
+(C) 2008 by Zer0day <zer0day@mail.ru>
