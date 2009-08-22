@@ -1,0 +1,102 @@
+/* standard elements */
+html {min-height: 100%;}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {color: #048;}
+a:hover {color: #06C;}
+
+body {
+	background: #E7E7E2 url('img/body_login.jpg') no-repeat center top;
+	color: #444;
+	font: normal 65% Tahoma,sans-serif;
+	padding-top: 40px;
+}
+
+tr {
+	border: 1px solid black;
+}
+
+td {
+	border: 1px solid silver;
+	empty-cells: hide;
+	white-space: nowrap;
+}
+
+tr:hover {
+	background-color: yellow;
+}
+
+p,code,ul {padding-bottom: 1.2em;}
+
+li {list-style: none;}
+
+h1 {
+font: normal 1.8em Tahoma,sans-serif;
+font-style: bold;
+}
+
+h2 {
+font: bold 1.4em sans-serif;
+}
+
+h3 {
+font: bold 1em Tahoma,sans-serif;
+}
+
+form,input {margin: 0; padding: 0; display: inline;}
+
+h1,h2,h3 {
+padding-top: 6px;
+color: #553;
+margin-bottom: 4px;
+}
+
+/* misc */
+.clearer {clear: both; font-size: 0;}
+.left {float: left;}
+.right {float: right;}
+
+/* structure */
+.inner-container {
+	border: 2px solid #D7D7D2;
+	background: #FFF;
+	font-size: 1.2em;
+	margin: 0 auto;
+	padding: 10px;
+	width: 450px;
+}
+
+.outer-container {
+	background: url('img/container_.jpg') no-repeat center bottom;
+	padding-bottom: 50px;
+}
+
+/* headere & title */
+.header {
+	background: #222 url('img/header_login.jpg') no-repeat;
+	height: 220px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+.header .title {
+	color: #FFF;
+	padding-top: 25px;
+}
+.header .title .headline a {
+	/* border-bottom: 1px dashed #657382; */
+	color: #FFF;
+	font: normal 3em sans-serif;
+	padding-bottom: 2px;
+	text-decoration: none;
+}
+.header .title a:hover {border-color: #F60;}
+.header .title .subtitle {
+	font: normal 1.1em Verdana,sans-serif;
+	padding-top: 6px;
+}
+
+
